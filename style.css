@@ -1,0 +1,145 @@
+/* --- Global Body Setup --- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f4f6f9;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Smooth scrolling when clicking navbar links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Center all content on screen */
+.main-container {
+  width: 85%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.navcontent{
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 5px;
+    
+}
+.navcontent:hover{
+    background-color: green;
+}
+
+
+/* --- The Required Card / Box Design --- */
+.portfolio-box {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 30px;
+  /* Leaves space above card when scrolling from navbar */
+  scroll-margin-top: 80px; 
+}
+
+/* Card Header */
+.box-header {
+  color: #0d6efd; /* Bootstrap Blue */
+  border-bottom: 2px solid #0d6efd;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Content inside the cards */
+.box-content p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+/* Subtitles for jobs and education */
+.item-subtitle {
+  color: #666666;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* Inner card divisions */
+.experience-item,
+.qual-item,
+.project-item,
+.reference-item {
+  background-color: #fcfcfc;
+  border: 1px solid #eeeeee;
+  border-left: 4px solid #0d6efd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.experience-item h3,
+.qual-item h3,
+.project-item h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #222222;
+}
+
+/* Project button link */
+.simple-btn {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #0d6efd;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.simple-btn:hover {
+  background-color: #0b5ed7;
+}
+
+/* Reference quote styling */
+.reference-text {
+  font-style: italic;
+  color: #444444;
+}
+
+.reference-name {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+
+.Resume{
+background-color: #4CAF50; 
+color: white; 
+border: 1px solid; 
+border-radius: 5px; 
+
+}
+
+/* ====================================================
+   MEDIA QUERY (Responsiveness for Mobile & Tablets)
+   ==================================================== */
+@media screen and (max-width: 768px) {
+  .main-container {
+    width: 92%;
+    margin: 20px auto;
+  }
+
+  .portfolio-box {
+    padding: 18px;
+  }
+
+  .box-header {
+    font-size: 20px;
+  }
+
+  .box-content p {
+    font-size: 15px;
+  }
+}
