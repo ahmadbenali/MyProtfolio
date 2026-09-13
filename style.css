@@ -15,9 +15,9 @@ html {
 
 /* Center all content on screen */
 .main-container {
-  width: 85%;
-  max-width: 900px;
-  margin: 30px auto;
+  width: 85%; /* for small secreen */
+  max-width: 900px; /* for large screen*/
+  margin: 30px auto; /* this center the boxes*/
 }
 
 .navcontent{
@@ -77,6 +77,18 @@ html {
   margin-bottom: 15px;
   border-radius: 4px;
 }
+
+.experience-item:hover,
+.qual-item:hover,
+.project-item:hover,
+.reference-item:hover {
+  transform: scale(1.03); /* Increases card size by 3% */
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12); /* Shadow gives depth */
+  z-index: 5; /* Ensures the expanded box sits on top of adjacent boxes */
+  cursor: pointer;
+  border-left: 4px solid #6ffa04;
+}
+
 
 /*================Tech skills==================*/
 
