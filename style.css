@@ -78,6 +78,74 @@ html {
   border-radius: 4px;
 }
 
+/*================Tech skills==================*/
+
+.skills-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Each column takes an equal 50% width */
+.skills-col {
+  flex: 1;
+}
+
+.skills-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222222;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* --- Flex Container for Technical Tags --- */
+.skills-badges {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allows tags to wrap onto next line naturally */
+  gap: 8px;        /* Spacing between badges */
+}
+
+.skill-badge {
+  background-color: #0d6efd;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* --- Flex Container for Soft Skills List --- */
+.soft-skills-list {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  gap: 8px;               /* Clean spacing between items instead of margin */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.soft-skill-item {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-left: 4px solid #0d6efd;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #333333;
+}
+
+/* --- Mobile & Tablets --- */
+@media screen and (max-width: 768px) {
+  .skills-row {
+    flex-direction: column; /* Stack Technical and Soft skills vertically on mobile */
+    gap: 24px;
+  }
+}
+
+
 .experience-item h3,
 .qual-item h3,
 .project-item h3 {
@@ -120,6 +188,10 @@ color: white;
 border: 1px solid; 
 border-radius: 5px; 
 
+}
+.Resume:hover{
+  background-color: white;
+  color: #222222;
 }
 
 /* ====================================================
