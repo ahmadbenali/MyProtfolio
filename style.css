@@ -137,14 +137,6 @@ html {
   color: #333333;
 }
 
-/* --- Mobile & Tablets --- */
-@media screen and (max-width: 768px) {
-  .skills-row {
-    flex-direction: column; /* Stack Technical and Soft skills vertically on mobile */
-    gap: 24px;
-  }
-}
-
 
 .experience-item h3,
 .qual-item h3,
@@ -213,5 +205,9 @@ border-radius: 5px;
 
   .box-content p {
     font-size: 15px;
+  }
+  .skills-row {
+    flex-direction: column; /* Stack Technical and Soft skills vertically on mobile */
+    gap: 24px;
   }
 }

@@ -22,9 +22,15 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <!-- Logo -->
-      <a class="navbar-brand fw-bold" href="#about">
-        Ahmad Smairat
-      </a>
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#about">
+      <span class="brand-logo-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+      </span>
+      <span>Ahmad <span class="text-primary">Smairat</span></span>
+    </a>
 
       <!-- Mobile Toggle Button -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -218,7 +224,15 @@ Programming (OOP) principles. </p>
   <footer id="contact" class="bg-dark text-light text-center py-4 mt-5">
     <div class="container">
       <h3 class="mb-3">Contact Details</h3>
-      <p class="mb-1"><strong>Email:</strong> a7madbenali@gmail.com</p>
+      <p class="mb-2 d-inline-flex align-items-center gap-2">
+        <strong>Email:</strong>
+          <a href="mailto:a7madbenali@gmail.com?subject=Portfolio%20Inquiry" class="btn btn-outline-primary btn-sm px-3 py-1 rounded-pill d-inline-flex align-items-center gap-2 shadow-sm">
+          <i class="bi bi-envelope-fill"></i>
+          <span>a7madbenali@gmail.com</span>
+            <i class="bi bi-arrow-up-right small"></i>
+        </a>
+      </p>
+
       <p class="mb-1"><strong>Phone:</strong> +962 7 7544 2513</p>
       <p class="mb-3"><strong>Location:</strong> Ramthaa / Irbid, Jordan</p>
       
