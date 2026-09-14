@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #f4f6f9;
+  background-color: #d0d3d7bd;
   color: #333333;
 }
 
@@ -67,10 +67,9 @@ body {
   width: 280px;
   height: 360px;
   object-fit: cover;         /* Keeps proper aspect ratio without stretching */
-  border-radius: 140px 140px 24px 24px; /* Creates the arched portrait frame */
+  border-radius: 140px 140px 24px 24px; 
   border: 4px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-  display: block;
 }
 
 .status-indicator {
