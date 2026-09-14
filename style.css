@@ -8,12 +8,9 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Inter", sans-serif;
   background-color: #f4f6f9;
   color: #333333;
-  line-height: 1.6;
 }
 
 /* ====================================================
@@ -33,7 +30,9 @@ body {
   align-items: center;
   justify-content: space-between;
   max-width: 1000px;
+  height: auto;
   margin: 0 auto;
+  min-height: 500px;
   gap: 40px;
 }
 
@@ -54,6 +53,24 @@ body {
   padding: 6px 14px;
   border-radius: 50px;
   margin-bottom: 18px;
+}
+
+.hero-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.9;
+
+}
+
+.hero-profile-img {
+  width: 280px;
+  height: 360px;
+  object-fit: cover;         /* Keeps proper aspect ratio without stretching */
+  border-radius: 140px 140px 24px 24px; /* Creates the arched portrait frame */
+  border: 4px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  display: block;
 }
 
 .status-indicator {
@@ -140,28 +157,22 @@ body {
 }
 
 
-/* --- The Required Card / Box Design --- */
 .portfolio-box {
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 8px;
   padding: 25px;
   margin-bottom: 30px;
-  /* Leaves space above card when scrolling from navbar */
-  scroll-margin-top: 80px; 
 }
 
-/* Card Header */
 .box-header {
-  color: #0d6efd; /* Bootstrap Blue */
+  color: #0d6efd; 
   border-bottom: 2px solid #0d6efd;
   padding-bottom: 10px;
-  margin-top: 0;
   margin-bottom: 20px;
   font-size: 24px;
 }
 
-/* Content inside the cards */
 .box-content p {
   font-size: 16px;
   margin-bottom: 12px;
@@ -176,7 +187,7 @@ body {
 
 /* Inner card divisions */
 .experience-item,
-.qual-item,
+.degree,
 .project-item,
 .reference-item {
   background-color: #fcfcfc;
@@ -188,12 +199,12 @@ body {
 }
 
 .experience-item:hover,
-.qual-item:hover,
+.degree:hover,
 .project-item:hover,
 .reference-item:hover {
   transform: scale(1.03); /* Increases card size by 3% */
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12); /* Shadow gives depth */
-  z-index: 5; /* Ensures the expanded box sits on top of adjacent boxes */
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  z-index: 5; /* the expanded box sits on top of adjacent boxes */
   cursor: pointer;
   border-left: 4px solid #6ffa04;
 }
@@ -226,8 +237,8 @@ body {
 .skills-badges {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* Allows tags to wrap onto next line naturally */
-  gap: 8px;        /* Spacing between badges */
+  flex-wrap: wrap; 
+  gap: 8px;        
 }
 
 .skill-badge {
@@ -242,11 +253,9 @@ body {
 /* --- Flex Container for Soft Skills List --- */
 .soft-skills-list {
   display: flex;
-  flex-direction: column; /* Stacks items vertically */
-  gap: 8px;               /* Clean spacing between items instead of margin */
+  flex-direction: column; 
+  gap: 8px;              
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .soft-skill-item {
@@ -261,7 +270,7 @@ body {
 
 
 .experience-item h3,
-.qual-item h3,
+.degree h3,
 .project-item h3 {
   margin-top: 0;
   font-size: 18px;
@@ -270,11 +279,13 @@ body {
 
 /* Project button link */
 .simple-btn {
-  display: inline-block;
   padding: 6px 14px;
   background-color: #0d6efd;
   color: #ffffff;
+
+  /*Don't put a line under the words*/
   text-decoration: none;
+
   border-radius: 4px;
   font-size: 14px;
   margin-top: 8px;
@@ -309,7 +320,7 @@ border-radius: 5px;
 }
 
 /* ====================================================
-   MEDIA QUERY (Responsiveness for Mobile & Tablets)
+   MEDIA QUERY 
    ==================================================== */
 
  @media screen and (max-width: 768px) {
@@ -333,9 +344,17 @@ border-radius: 5px;
     flex-direction: column; /* Stack Technical and Soft skills vertically on mobile */
     gap: 24px;
   }
+
    .hero-container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .hero-profile-img{
+    width: 220px;            /* Scales down neatly for phones */
+    height: 280px;
+    border-radius: 110px 110px 20px 20px;
+    margin: 0 auto;
   }
 
   .hero-heading {
