@@ -11,12 +11,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Display&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <!-- to track the mouse -->
-<body data-bs-spy="scroll" data-bs-target="#navMenu" data-bs-smooth-scroll="true">
+<body data-bs-spy="scroll" data-bs-target="#navMenu" >
 
   <!-- ================= NAVBAR Bootstrap ================= -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -40,7 +44,7 @@
       <!-- Nav Links -->
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item active"><a class="nav-link " href="#about">About</a></li>
+          <li class="nav-item active"><a class="nav-link " href="#about">About Me</a></li>
           <li class="nav-item active"><a class="nav-link " href="#experience">Experience</a></li>
           <li class="nav-item active"><a class="nav-link " href="#Education">Education</a></li>
           <li class="nav-item active"><a class="nav-link " href="#skills">Skills</a></li>
@@ -73,9 +77,7 @@
         <a href="#projects" class="hero-btn-primary">
           View Projects &darr;
         </a>
-        <a href="ResumeSoftWare.pdf" download="ResumeSoftWare.pdf" class="hero-btn-secondary">
-          Download Resume &darr;
-        </a>
+         <a href="#contact" class="hero-btn-secondary">Let's Connect</a>
       </div>
     </div>
 
@@ -93,7 +95,8 @@
 
     <!-- 1. ABOUT CARD -->
     <section id="about" class="portfolio-box">
-      <h2 class="box-header">About Me</h2>
+
+      <h1 class="box-header">About Me</h1>
 
       <div class="box-content">
         <p>
@@ -107,7 +110,7 @@
 
     <!-- 2. EXPERIENCE CARD -->
     <section id="experience" class="portfolio-box">
-      <h2 class="box-header">Experience</h2>
+      <h1 class="box-header">Experience</h1>
       <div class="box-content">
 
          <div class="experience-item">
@@ -200,7 +203,7 @@
     <!-- 5. PROJECTS CARD -->
     <section id="projects" class="portfolio-box">
       <h2 class="box-header">Projects</h2>
-      <div  class="box-content" >
+      <div  id="pro" class="box-content" >
         
         <div class="project-item">
           <h3>Banking Management System</h3>
@@ -231,6 +234,8 @@ Programming (OOP) principles. </p>
           <a href="https://github.com/ahmadbenali/MyProtfolio" class="simple-btn" target="_blank">View on GitHub</a>
         </div>
 
+        
+
       </div>
     </section>
 
@@ -259,36 +264,47 @@ Programming (OOP) principles. </p>
   </div>
 
   <!-- ================= 2. FOOTER (Bootstrap) ================= -->
-  <footer id="contact" class="bg-dark text-light text-center py-4 mt-5">
-    <div class="container">
-      <h3 class="mb-3">Contact Details</h3>
-      <p class="mb-2 d-inline-flex align-items-center gap-2">
-        <strong>Email:</strong>
-          <a href="mailto:a7madbenali@gmail.com?subject=Portfolio%20Inquiry" class="btn btn-outline-primary btn-sm px-3 py-1 rounded-pill d-inline-flex align-items-center gap-2 shadow-sm">
-          <i class="bi bi-envelope-fill"></i>
-          <span>a7madbenali@gmail.com</span>
-            <i class="bi bi-arrow-up-right small"></i>
-        </a>
-      </p>
+  <footer id="contact" class="bg-dark text-light py-4 mt-5">
+  <div class="container">
 
-      <p class="mb-1"><strong>Phone:</strong> +962 7 7544 2513</p>
-      <p class="mb-3"><strong>Location:</strong> Ramthaa / Irbid, Jordan</p>
+    <h3 class="mb-4 text-center">Contact Details</h3>
+
+    <!--Container-->
+    <div class="row align-items-center gy-3">
       
-      <div>
-        <a href="https://github.com/ahmadbenali" class="btn btn-outline-light btn-sm m-1" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/ahmad-smairat-101479223" class="btn btn-outline-light btn-sm m-1" target="_blank">LinkedIn</a>
-        <a href="ResumeSoftWare.pdf"  download="ResumeSoftWare.pdf">
-            <button class="Resume">
-                <i class="fa fa-download"></i> Download Resume
-            </button>
-        </a>
+      <!-- Left Column-->
+      <div class="col-md-7 text-center text-md-start">
+        <p class="mb-2 d-flex flex-wrap align-items-center justify-content-center justify-content-md-start gap-2">
+          <strong>Email:</strong>
+          <a href="mailto:a7madbenali@gmail.com?subject=Portfolio%20Inquiry" class="btn btn-outline-primary btn-sm px-3 py-1 rounded-pill d-inline-flex align-items-center gap-2 shadow-sm">
+            <i class="bi bi-envelope-fill"></i>
+            <span>a7madbenali@gmail.com</span>
+            <i class="bi bi-arrow-up-right small"></i>
+          </a>
+        </p>
+        <p class="mb-2"><strong>Phone:</strong> +962 7 7544 2513</p>
+        <p class="mb-0"><strong>Location:</strong> Ramthaa / Irbid, Jordan</p>
       </div>
 
-      <hr class="border-secondary my-3">
-      <p class="text-secondary small mb-0">&copy; 2026 Ahmad. Built with HTML5, CSS3, &amp; Bootstrap.</p>
-    </div>
-  </footer>
+      <!-- Right Column -->
+      <div class="col-md-5 text-center text-md-end">
+        <div class="d-flex flex-wrap justify-content-center justify-content-md-end gap-2">
+          <a href="https://github.com/ahmadbenali" class="btn btn-outline-light btn-sm" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/ahmad-smairat-101479223" class="btn btn-outline-light btn-sm" target="_blank">LinkedIn</a>
+          
+          <a href="ResumeSoftWare.pdf" download="ResumeSoftWare.pdf" class="btn btn-success btn-sm d-inline-flex align-items-center gap-1">
+            <i class="bi bi-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
 
+    </div>
+
+    <hr class="border-secondary my-4">
+    <p class="text-secondary small mb-0 text-center">&copy; 2026 Ahmad. Built with HTML5, CSS3, &amp; Bootstrap.</p>
+
+  </div>
+</footer>
   <!-- Bootstrap JS (Needed for mobile navbar dropdown) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
